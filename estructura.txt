@@ -1,9 +1,10 @@
 com.juanjojmnz.gestorgastos
 ├── controller       // Controladores REST (expuestos al cliente)
-├── service          // Lógica de negocio
-│   ├── impl         // Implementaciones concretas
+├── service          // Interfaces de servicios (lógica de negocio)
+│   └── impl         // Implementaciones concretas de los servicios
 ├── repository       // Interfaces que extienden JpaRepository
-├── entity           // Entidades JPA (clases @Entity)
-├── dto              // Objetos de transferencia de datos
-├── exception        // Manejo de errores personalizados
-└── config           // Configuraciones generales (seguridad, CORS, etc.)
+├── entity           // Entidades JPA (@Entity)
+├── dto              // Objetos de transferencia de datos (Data Transfer Objects)
+├── security         // Seguridad: JWT, filtros, configuración de Spring Security
+├── mapper           // Conversores entre entidades y DTOs
+└── config           // Configuraciones generales (CORS, beans, etc.)
